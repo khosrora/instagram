@@ -6,13 +6,18 @@
  */
 
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
+import { enableScreens } from 'react-native-screens';
 
+
+enableScreens();
 
 function App(): JSX.Element {
 
   return (
-    <View></View>
+    <View>
+      <Text>Hello</Text>
+    </View>
   );
 }
 
