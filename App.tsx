@@ -48,7 +48,7 @@ function MyTabs() {
           iconName = focused ? "ios-person" : "ios-person-outline"
         }
 
-        return <Ionic name={iconName} size={size} color={color} />
+        return <Ionic name={iconName} size={size} color="#000" />
       }
     })}>
       <Tab.Screen name='Home' component={Home} />
