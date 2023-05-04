@@ -20,6 +20,7 @@ import Search from './src/components/screens/Search';
 import Reels from './src/components/screens/Reels';
 import Profile from './src/components/screens/Profile';
 import Activity from './src/components/screens/Activity';
+import Status from './src/components/screenComponents/Status';
 
 
 const Stack = createNativeStackNavigator();
@@ -65,9 +66,11 @@ function App(): JSX.Element {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-        headerShown: false
+        headerShown: false,
       }}>
         <Stack.Screen name='MyTabs' component={MyTabs} />
+        <Stack.Screen name='Status' component={Status} />
+        {/* Status */}
       </Stack.Navigator>
     </NavigationContainer>
   );

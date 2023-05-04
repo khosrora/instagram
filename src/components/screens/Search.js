@@ -1,11 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { ScrollView, StyleSheet, View, SafeAreaView } from 'react-native'
+
+import SearchBox from '../screenComponents/SearchBox'
+import SearchContent from '../screenComponents/SearchContent'
 
 const Search = () => {
   return (
-    <View>
-      <Text>Search</Text>
-    </View>
+    <SafeAreaView>
+      <View style={{
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'white',
+        position: 'relative'
+      }}>
+        <ScrollView>
+          <SearchBox />
+          <SearchContent />
+        </ScrollView>
+      </View>
+    </SafeAreaView>
   )
 }
 
